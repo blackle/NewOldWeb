@@ -1,0 +1,8 @@
+<script src="https://unpkg.com/htmx.org@2.0.3" integrity="sha384-0895/pl2MU10Hqc6jd4RvrthNlDiE9U1tWmX7WRESftEDRosgxNsQG/Ze9YMRzHq" crossorigin="anonymous"></script>
+
+<h1>Guess the password!</h1>
+<form hx-post="./form.py" hx-target="#result">
+	<input type="text" name="password"/>
+	<button type="submit">Send guess</button>
+</form>
+<div id="result"></div>
